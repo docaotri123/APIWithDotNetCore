@@ -18,13 +18,43 @@ namespace CityInfo.API
                 {
                     ID = 1 ,
                     Name = "HCM",
-                    Description = "HCM city is very large"
+                    Description = "HCM city is very large",
+                    PointOfInterest = new List<PointOfInterestDTO>()
+                    {
+                        new PointOfInterestDTO()
+                        {
+                            ID=1,
+                            Name = "Central Park",
+                            Description = "abc"
+                        },
+                         new PointOfInterestDTO()
+                        {
+                            ID=2,
+                            Name = "Landmark 81",
+                            Description = "bdf"
+                        }
+                    }
                 },
                  new CityDTO()
                 {
                     ID = 1 ,
                     Name = "Ha Noi",
-                    Description = "Ha Noi city is very large"
+                    Description = "Ha Noi city is very large",
+                    PointOfInterest = new List<PointOfInterestDTO>()
+                    {
+                        new PointOfInterestDTO()
+                        {
+                            ID=1,
+                            Name = "Ho Guom lake",
+                            Description = "abc"
+                        },
+                         new PointOfInterestDTO()
+                        {
+                            ID=2,
+                            Name = "Landmark 82",
+                            Description = "bdf"
+                        }
+                    }
                 }
             };
         }

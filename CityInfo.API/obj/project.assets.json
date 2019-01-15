@@ -12078,11 +12078,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TriDC\\DotNet\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
+      "projectUniqueName": "D:\\TriDC\\DotNet\\APIWithDotNetCore\\CityInfo.API\\CityInfo.API.csproj",
       "projectName": "CityInfo.API",
-      "projectPath": "D:\\TriDC\\DotNet\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
+      "projectPath": "D:\\TriDC\\DotNet\\APIWithDotNetCore\\CityInfo.API\\CityInfo.API.csproj",
       "packagesPath": "C:\\Users\\TriDC\\.nuget\\packages\\",
-      "outputPath": "D:\\TriDC\\DotNet\\CityInfo.API\\CityInfo.API\\obj\\",
+      "outputPath": "D:\\TriDC\\DotNet\\APIWithDotNetCore\\CityInfo.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
