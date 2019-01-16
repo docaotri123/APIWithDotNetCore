@@ -8,8 +8,10 @@ namespace CityInfo.API.Services
 {
     public class LocalMailService
     {
-        private string _mailTo = "docaotri211997@gmail.com";
-        private string _mailFrom = "dctri211997@gmail.com";
+        private string _mailTo = Startup.Configuration["mailSetting:mailTo"];
+        private string _mailFrom = Startup.Configuration["mailSetting:mailFrom"];
+        //private string _mailTo = "abc";
+        //private string _mailFrom = "def";
 
         public void Send(string subject, string message)
         {

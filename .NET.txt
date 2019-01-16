@@ -1,0 +1,13 @@
+// learn API with .NET core
+https://app.pluralsight.com/player?course=asp-dotnet-core-api-building-first&author=kevin-dockx&name=asp-dotnet-core-api-building-first-m0&clip=0&mode=live
+//
+https://app.pluralsight.com/player?course=angular-aspdotnet-core-business-applications&author=kevin-dockx&name=19117971-6309-4a1f-a9ae-da378332e30c&clip=3&mode=live
+
+Development
+Production
+
+//Migration
+Add-Migration Name
+
+Update-Database //generate database
+
