@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CityInfo.API.Entities;
+using CityInfo.API.Models;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -24,7 +25,8 @@ namespace CityInfo.API
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appSetting.json", optional: false, reloadOnChange: true)
-                .AddJsonFile($"appSetting.{env.EnvironmentName}.json",optional: true, reloadOnChange: true);
+                .AddJsonFile($"appSetting.{env.EnvironmentName}.json", optional: true, reloadOnChange: true)
+                .AddEnvironmentVariables();
 
             Configuration = builder.Build();
         }
@@ -54,12 +56,15 @@ namespace CityInfo.API
             services.AddTransient<LocalMailService>();
             // @"Server=(localdb)\SQLEXPRESS;Database=CityInfo;Trusted_Connection=True";
 
-            var connnectionString = @"Server=(localdb)\mssqllocaldb;Database=CityInfo;Trusted_Connection=True;";
-            services.AddDbContext<CityInfoContext>(o => o.UseSqlServer(connnectionString));
+            var connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=CityInfo;Trusted_Connection=True;";
+            //var connectionString = Startup.Configuration["connectionStrings:cityInfoDBConnectionString"];
+            services.AddDbContext<CityInfoContext>(o => o.UseSqlServer(connectionString));
+            services.AddScoped<ICityInfoRepository, CityInfoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory,
+            CityInfoContext cityInfoContext)
         {
             loggerFactory.AddConsole();
             loggerFactory.AddDebug();
@@ -72,7 +77,17 @@ namespace CityInfo.API
                 app.UseExceptionHandler();
             }
 
+            cityInfoContext.EnsureSeedDataForContext();
+
             app.UseStatusCodePages();
+
+            AutoMapper.Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<City, CityWithoutPointsOfInterestDTO>();
+                cfg.CreateMap<City, CityDTO>();
+                cfg.CreateMap<PointOfInterest, PointOfInterestDTO>();
+                cfg.CreateMap<PointOfInterestForCreationDTO, PointOfInterest>();
+            });
 
             app.UseMvc();
 

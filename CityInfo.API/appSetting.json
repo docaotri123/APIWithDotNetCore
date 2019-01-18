@@ -2,5 +2,8 @@
   "mailSetting": {
     "mailTo": "docaotri211997@gmail.com",
     "mailFrom": "dctri211997@gmail.com"
+  },
+  "connectionStrings": {
+    "cityInfoDBConnectionString": "Server=(localdb)\\mssqllocaldb;Database=CityInfo;Trusted_Connection=True;"
   }
 }
