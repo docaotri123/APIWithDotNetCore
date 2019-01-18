@@ -1,5 +1,11 @@
-// learn API with .NET core
+// learn API with .NET core beginer
 https://app.pluralsight.com/player?course=asp-dotnet-core-api-building-first&author=kevin-dockx&name=asp-dotnet-core-api-building-first-m0&clip=0&mode=live
+// learn API with .NET core Intermediate
+https://app.pluralsight.com/library/courses/asp-dot-net-core-restful-api-building/table-of-contents
+//Entity framework core 
+https://app.pluralsight.com/library/courses/entity-framework-core-2-getting-started/table-of-contents
+https://app.pluralsight.com/player?course=entity-framework-core-2-1-migrations-fundamentals&author=michael-perry&name=1f7f87e5-7696-4392-8bc6-a0cb1122e9fd&clip=0&mode=live
+
 //
 https://app.pluralsight.com/player?course=angular-aspdotnet-core-business-applications&author=kevin-dockx&name=19117971-6309-4a1f-a9ae-da378332e30c&clip=3&mode=live
 
