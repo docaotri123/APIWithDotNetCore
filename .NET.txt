@@ -15,5 +15,14 @@ Production
 //Migration
 Add-Migration Name
 
-Update-Database //generate database
+Update-Database -verbose//generate database
 
+add-migration relationships
+
+
+//syntax convert relationships in db
+https://www.tech-recipes.com/rx/56738/one-to-one-one-to-many-table-relationships-in-sql-server/
+
+// .Net core vs Angular
+https://app.pluralsight.com/player?course=angular-aspnetcore-restful-services&author=dan-wahlin&name=angular-aspnetcore-restful-services-m2&clip=1&mode=live
+https://github.com/DanWahlin/Angular-ASPNET-Core-Seed
