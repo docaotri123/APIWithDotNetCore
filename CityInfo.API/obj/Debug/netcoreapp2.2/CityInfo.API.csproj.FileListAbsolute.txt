@@ -26,3 +26,17 @@ D:\TriDC\DotNet\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.
 D:\TriDC\DotNet\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.API.RazorTargetAssemblyInfo.cache
 D:\TriDC\DotNet\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.API.dll
 D:\TriDC\DotNet\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.API.pdb
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\bin\Debug\netcoreapp2.2\CityInfo.API.deps.json
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\bin\Debug\netcoreapp2.2\CityInfo.API.runtimeconfig.json
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\bin\Debug\netcoreapp2.2\CityInfo.API.runtimeconfig.dev.json
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\bin\Debug\netcoreapp2.2\CityInfo.API.dll
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\bin\Debug\netcoreapp2.2\CityInfo.API.pdb
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.API.csprojAssemblyReference.cache
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.API.csproj.CoreCompileInputs.cache
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.API.RazorAssemblyInfo.cache
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.API.RazorAssemblyInfo.cs
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.API.AssemblyInfoInputs.cache
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.API.AssemblyInfo.cs
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.API.RazorTargetAssemblyInfo.cache
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.API.dll
+H:\Tri\Core\APIWithDotNetCore\CityInfo.API\obj\Debug\netcoreapp2.2\CityInfo.API.pdb

@@ -40,7 +40,19 @@ namespace CityInfo.API
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+           
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
             services.AddMvc();
+
+
             //.AddMvcOptions(o => o.OutputFormatters.Add(
             //    new XmlDataContractSerializerOutputFormatter()
             //    ));
@@ -68,6 +80,7 @@ namespace CityInfo.API
         {
             loggerFactory.AddConsole();
             loggerFactory.AddDebug();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -80,6 +93,8 @@ namespace CityInfo.API
             cityInfoContext.EnsureSeedDataForContext();
 
             app.UseStatusCodePages();
+
+            app.UseCors("CorsPolicy");
 
             AutoMapper.Mapper.Initialize(cfg =>
             {
