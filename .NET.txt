@@ -26,3 +26,6 @@ https://www.tech-recipes.com/rx/56738/one-to-one-one-to-many-table-relationships
 // .Net core vs Angular
 https://app.pluralsight.com/player?course=angular-aspnetcore-restful-services&author=dan-wahlin&name=angular-aspnetcore-restful-services-m2&clip=1&mode=live
 https://github.com/DanWahlin/Angular-ASPNET-Core-Seed
+
+//book
+https://github.com/apress/esntl-angular-for-asp.net-core-mvc
