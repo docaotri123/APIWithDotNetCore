@@ -29,3 +29,5 @@ https://github.com/DanWahlin/Angular-ASPNET-Core-Seed
 
 //book
 https://github.com/apress/esntl-angular-for-asp.net-core-mvc
+
+https://github.com/apress/pro-asp.net-core-mvc-2
